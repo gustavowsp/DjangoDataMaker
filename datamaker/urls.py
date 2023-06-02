@@ -19,7 +19,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 def view(request):
-    return HttpResponse('Django Online')
+    return HttpResponse('<a href="https://auth.mercadolivre.com.br/authorization?response_type=code&client_id=7437884314012695&redirect_uri=https://django-data-maker.vercel.app">Login Mercado Livre</a>')
 
 urlpatterns = [
     path('',view),
